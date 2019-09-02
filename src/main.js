@@ -6,6 +6,14 @@ import './registerServiceWorker'
 
 Vue.config.productionTip = false
 
+// custom
+import ElementUI from 'element-ui';
+import './assets/style/element-variables.scss'
+import locale from 'element-ui/lib/locale/lang/en'
+
+Vue.use(ElementUI, { locale })
+
+
 new Vue({
   router,
   store,
