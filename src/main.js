@@ -6,6 +6,10 @@ import './registerServiceWorker'
 
 Vue.config.productionTip = false
 
+// axios
+import axios from 'axios'
+axios.defaults.baseURL = process.env.VUE_APP_BASE_API;
+
 // element ui
 import ElementUI from 'element-ui';
 import './assets/style/element-variables.scss'
@@ -15,12 +19,14 @@ Vue.use(ElementUI, { locale })
 
 // i18n
 import VueI18n from 'vue-i18n'
-
 Vue.use(VueI18n)
 
 // lang
 import { i18n } from './lang/i18n'
 
+// interceptor
+import interceptorsSetup from './services/helpers/interceptors'
+interceptorsSetup();
 
 new Vue({
   router,
