@@ -7,12 +7,12 @@ function subjectName(item) {
         return item
     }
     else if (item.created_by === user.id || user.is_admin === 1) {
-        return 'Blog'
+        return 'Demo'
     }
 }
 
 export default AbilityBuilder.define({ subjectName }, can => {
     can(['read'], 'all')
     if (user) can(['create'], 'all')
-    can(['delete'], 'Blog')
+    can(['delete'], 'Demo')
 })
