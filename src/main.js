@@ -21,6 +21,11 @@ Vue.use(VueI18n)
 // lang
 import { i18n } from './lang/i18n'
 
+// casl
+import ability from './config/ability'
+import { abilitiesPlugin } from '@casl/vue'
+
+Vue.use(abilitiesPlugin, ability)
 
 new Vue({
   router,
