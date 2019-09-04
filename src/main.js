@@ -24,17 +24,15 @@ Vue.use(VueI18n)
 // lang
 import { i18n } from './lang/i18n'
 
-<<<<<<< HEAD
+// interceptor
+import interceptorsSetup from './services/helpers/interceptors'
+interceptorsSetup();
+
 // casl
 import ability from './config/ability'
 import { abilitiesPlugin } from '@casl/vue'
 
 Vue.use(abilitiesPlugin, ability)
-=======
-// interceptor
-import interceptorsSetup from './services/helpers/interceptors'
-interceptorsSetup();
->>>>>>> 07355389ff075af98712654605942bbc7382f884
 
 new Vue({
   router,

@@ -10,12 +10,9 @@
     "test:e2e": "vue-cli-service test:e2e"
   },
   "dependencies": {
-<<<<<<< HEAD
     "@casl/ability": "^3.2.0",
     "@casl/vue": "^0.5.1",
-=======
     "axios": "^0.19.0",
->>>>>>> 07355389ff075af98712654605942bbc7382f884
     "core-js": "^2.6.5",
     "element-ui": "^2.12.0",
     "register-service-worker": "^1.6.2",
