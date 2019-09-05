@@ -25,7 +25,7 @@ Vue.use(VueI18n)
 import { i18n } from './lang/i18n'
 
 // interceptor
-import interceptorsSetup from './services/helpers/interceptors'
+import interceptorsSetup from './services/helpers/interceptor'
 interceptorsSetup();
 
 // casl
